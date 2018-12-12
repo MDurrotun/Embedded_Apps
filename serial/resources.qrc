@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>picture/about.png</file>
+        <file>picture/feedback.png</file>
+        <file>picture/file.png</file>
+        <file>picture/history.png</file>
+        <file>picture/home.png</file>
+        <file>picture/home2.png</file>
+        <file>picture/level.png</file>
+        <file>picture/login.png</file>
+        <file>picture/maps.jpeg</file>
+        <file>picture/off.png</file>
+        <file>picture/on.png</file>
+        <file>picture/open.png</file>
+        <file>picture/reboot.png</file>
+        <file>picture/t.png</file>
+        <file>sound/blop.mp3</file>
+        <file>sound/blop.wav</file>
+        <file>video/tayamum.mp4</file>
+    </qresource>
+</RCC>
