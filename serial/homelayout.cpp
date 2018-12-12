@@ -173,7 +173,7 @@ void homeLayout::playVideo(){
     QMediaPlayer *player = new QMediaPlayer;
     QVideoWidget *videoWidget = new QVideoWidget;
 
-    player->setMedia(QUrl::fromLocalFile("/home/durr/serial/video/tayamum.mp4"));
+    player->setMedia(QUrl::fromLocalFile("/home/durr/serial/video/nature.mp4"));
     player->setVideoOutput(videoWidget);
     videoWidget->setGeometry(300,50,800,600);
     videoWidget->show();
