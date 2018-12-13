@@ -2,6 +2,7 @@
 #include "ui_homelayout.h"
 #include "mainwindow.h"
 #include "maps.h"
+#include "level.h"
 #include "QMessageBox"
 #include "QTimer"
 #include "QGraphicsOpacityEffect"
@@ -132,11 +133,8 @@ void homeLayout::on_PushButtonAbout_clicked()
     params.message = Operation::DoSomething(Result::RESULT_SUCCESS);
     notificationLayout.AddNotificationWidget(this, params);
     this->playSound();
-}
 
-void homeLayout::on_PushButtonLevel_clicked()
-{
-    NotificationParams params;
+    /*NotificationParams params;
     params.title = "Trying to find not existed file";
     params.message = Operation::DoSomething(Result::RESULT_ERROR);
     params.detailsButtonText = "Try again";
@@ -144,7 +142,14 @@ void homeLayout::on_PushButtonLevel_clicked()
         on_PushButtonAbout_clicked();
     };
     notificationLayout.AddNotificationWidget(this, params);
-    this->playSound();
+    this->playSound();*/
+}
+
+void homeLayout::on_PushButtonLevel_clicked()
+{
+    level *levelUI = new level;
+    hide();
+    levelUI->show();
 }
 
 void homeLayout::on_PushButtonMaps_clicked()

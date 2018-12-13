@@ -32,7 +32,8 @@ SOURCES += \
     Notifications/NotificationWidget.cpp \
     Operation/Operation.cpp \
     Result/Result.cpp \
-    maps.cpp
+    maps.cpp \
+    level.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,13 +43,15 @@ HEADERS += \
     Notifications/NotificationWidget.h \
     Operation/Operation.h \
     Result/Result.h \
-    maps.h
+    maps.h \
+    level.h
 
 FORMS += \
         login.ui \
     mainwindow.ui \
     homelayout.ui \
-    maps.ui
+    maps.ui \
+    level.ui
 
 RESOURCES += \
     resources.qrc

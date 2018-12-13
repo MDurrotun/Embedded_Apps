@@ -27,10 +27,10 @@ int main(int argc, char *argv[])
     //alert.show();
 
     /////////////////////////Animation///////////////////////
-    QPropertyAnimation animation(&log, "windowOpacity");
+    QPropertyAnimation animation(&log, "rot1");
     animation.setDuration(1000);
     animation.setStartValue(0.0);
-    animation.setEndValue(1.0);
+    animation.setEndValue(90.0);
     animation.start();
 
     return a.exec();
