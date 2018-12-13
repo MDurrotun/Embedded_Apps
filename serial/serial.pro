@@ -52,7 +52,6 @@ FORMS += \
     homelayout.ui \
     maps.ui \
     level.ui
-
 RESOURCES += \
     resources.qrc
 
