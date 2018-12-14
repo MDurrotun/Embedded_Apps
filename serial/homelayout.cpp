@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "maps.h"
 #include "level.h"
+#include "feedback.h"
 #include "QMessageBox"
 #include "QTimer"
 #include "QGraphicsOpacityEffect"
@@ -80,9 +81,9 @@ void homeLayout::on_PushButtonHistory_clicked()
     mainUI->show();
 }
 
-//////////////////////////////pop up//////////////////////////////////
 void homeLayout::on_PushButtonFeedback_clicked()
 {
+    //////////////////////////////pop up//////////////////////////////////
     //QMessageBox::information(this, "Feedback", "Your Feedback");
     //QMessageBox::warning(this, "Warning", "Your gas is almost empty");
 
@@ -112,6 +113,11 @@ void homeLayout::on_PushButtonFeedback_clicked()
     ui->label->show();
     connect(timer,SIGNAL(timeout()),this,SLOT(fadeOut()));
     timer->start(2000); // 1000 ms to make the notification opacity full and 1000 seconds to call the fade out so total of 2000ms.*/
+
+    //////////////////////////////Feedback using thread//////////////////////////////////
+    hide();
+    feedback *feedbackUI = new feedback;
+    feedbackUI->show();
 }
 
 void homeLayout::fadeOut(){

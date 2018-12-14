@@ -33,7 +33,9 @@ SOURCES += \
     Operation/Operation.cpp \
     Result/Result.cpp \
     maps.cpp \
-    level.cpp
+    level.cpp \
+    feedback.cpp \
+    mythread.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -44,14 +46,17 @@ HEADERS += \
     Operation/Operation.h \
     Result/Result.h \
     maps.h \
-    level.h
+    level.h \
+    feedback.h \
+    mythread.h
 
 FORMS += \
         login.ui \
     mainwindow.ui \
     homelayout.ui \
     maps.ui \
-    level.ui
+    level.ui \
+    feedback.ui
 RESOURCES += \
     resources.qrc
 
