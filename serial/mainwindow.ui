@@ -161,8 +161,8 @@
   </widget>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/file.png</normaloff>:/file.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/picture/file.png</normaloff>:/picture/file.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -170,8 +170,8 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/open.png</normaloff>:/open.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/picture/open.png</normaloff>:/picture/open.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -179,8 +179,8 @@
   </action>
   <action name="actionReboot">
    <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/reboot.png</normaloff>:/reboot.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/picture/reboot.png</normaloff>:/picture/reboot.png</iconset>
    </property>
    <property name="text">
     <string>Reboot</string>
@@ -189,7 +189,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>

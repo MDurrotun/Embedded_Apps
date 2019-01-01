@@ -2,6 +2,8 @@
 #include "ui_homelayout.h"
 #include "mainwindow.h"
 #include "maps.h"
+#include "level.h"
+#include "feedback.h"
 #include "QMessageBox"
 #include "QTimer"
 #include "QGraphicsOpacityEffect"
@@ -79,9 +81,9 @@ void homeLayout::on_PushButtonHistory_clicked()
     mainUI->show();
 }
 
-//////////////////////////////pop up//////////////////////////////////
 void homeLayout::on_PushButtonFeedback_clicked()
 {
+    //////////////////////////////pop up//////////////////////////////////
     //QMessageBox::information(this, "Feedback", "Your Feedback");
     //QMessageBox::warning(this, "Warning", "Your gas is almost empty");
 
@@ -111,6 +113,11 @@ void homeLayout::on_PushButtonFeedback_clicked()
     ui->label->show();
     connect(timer,SIGNAL(timeout()),this,SLOT(fadeOut()));
     timer->start(2000); // 1000 ms to make the notification opacity full and 1000 seconds to call the fade out so total of 2000ms.*/
+
+    //////////////////////////////Feedback using thread//////////////////////////////////
+    hide();
+    feedback *feedbackUI = new feedback;
+    feedbackUI->show();
 }
 
 void homeLayout::fadeOut(){
@@ -132,11 +139,8 @@ void homeLayout::on_PushButtonAbout_clicked()
     params.message = Operation::DoSomething(Result::RESULT_SUCCESS);
     notificationLayout.AddNotificationWidget(this, params);
     this->playSound();
-}
 
-void homeLayout::on_PushButtonLevel_clicked()
-{
-    NotificationParams params;
+    /*NotificationParams params;
     params.title = "Trying to find not existed file";
     params.message = Operation::DoSomething(Result::RESULT_ERROR);
     params.detailsButtonText = "Try again";
@@ -144,7 +148,14 @@ void homeLayout::on_PushButtonLevel_clicked()
         on_PushButtonAbout_clicked();
     };
     notificationLayout.AddNotificationWidget(this, params);
-    this->playSound();
+    this->playSound();*/
+}
+
+void homeLayout::on_PushButtonLevel_clicked()
+{
+    level *levelUI = new level;
+    hide();
+    levelUI->show();
 }
 
 void homeLayout::on_PushButtonMaps_clicked()

@@ -16,6 +16,10 @@
         <file>picture/t.png</file>
         <file>sound/blop.mp3</file>
         <file>sound/blop.wav</file>
-        <file>video/tayamum.mp4</file>
+        <file>picture/jarum.png</file>
+        <file>picture/jarum2.png</file>
+        <file>picture/jarum3.png</file>
+        <file>picture/speedo.png</file>
+        <file>picture/speedo2.png</file>
     </qresource>
 </RCC>

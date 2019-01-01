@@ -4,6 +4,7 @@
 #include "mainwindow.h"
 #include "homelayout.h"
 #include "QLabel"
+#include "QPainter"
 
 login::login(QWidget *parent) :
     QDialog(parent),
@@ -13,6 +14,14 @@ login::login(QWidget *parent) :
 
     QPixmap pix("/home/durr/serial/picture/login.png");
     pix = pix.scaled(180, 180, Qt::IgnoreAspectRatio, Qt::FastTransformation);
+
+    //rotate pixmap
+   /*QMatrix rm;
+    rm.rotate(0);
+    int pxw = pix.width(), pxh = pix.height();
+    pix = pix.transformed(rm);
+    pix = pix.copy((pix.width() - pxw)/2, (pix.height() - pxh)/2, pxw, pxh);*/
+
     ui->label_3->setPixmap(pix);
 }
 

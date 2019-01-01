@@ -32,7 +32,10 @@ SOURCES += \
     Notifications/NotificationWidget.cpp \
     Operation/Operation.cpp \
     Result/Result.cpp \
-    maps.cpp
+    maps.cpp \
+    level.cpp \
+    feedback.cpp \
+    mythread.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,14 +45,18 @@ HEADERS += \
     Notifications/NotificationWidget.h \
     Operation/Operation.h \
     Result/Result.h \
-    maps.h
+    maps.h \
+    level.h \
+    feedback.h \
+    mythread.h
 
 FORMS += \
         login.ui \
     mainwindow.ui \
     homelayout.ui \
-    maps.ui
-
+    maps.ui \
+    level.ui \
+    feedback.ui
 RESOURCES += \
     resources.qrc
 
